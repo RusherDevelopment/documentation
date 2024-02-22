@@ -2,6 +2,7 @@ import {DefaultTheme, defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: "Rusherhack Docs",
+  base: "/documentation",
   description: "Indepth docs for rusherhacks plugins",
   themeConfig: {
     logo: 'assets/rusherhack-logo-head.png',
