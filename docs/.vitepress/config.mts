@@ -1,31 +1,39 @@
 import {DefaultTheme, defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "Rusherhack Docs",
-  base: "/documentation",
-  description: "Indepth docs for rusherhacks plugins",
+  title: "RusherHack Documentation",
+  base: "",
+  head: [
+    ['link', { rel: 'icon', href: './assets/rh-head_256x256.png' }]
+  ],
+  description: "Documentation for all things related to RusherHack.",
   themeConfig: {
-    logo: 'assets/rusherhack-logo-head.png',
+    logo: 'assets/rh-head_256x256.png',
     search: {
       provider: 'local'
     },
     nav: [
-        { text: 'Basics', link: '/basics/' },
-        { text: 'Client', link: '/client/' },
+        { text: 'Guide', link: '/guide/' },
+        { text: 'Features', link: '/features/' },
         { text: 'API', link: '/api/' },
     ],
     sidebar: {
       '/': { base: '/', items: sidebarBase() },
-      '/basics/': { base: '/basics/', items: sidebarBasics() },
-      '/client/': { base: '/client/', items: sidebarClient() },
+      '/guide/': { base: '/guide/', items: sidebarGuide() },
+      '/features/': { base: '/features/', items: sidebarFeatures() },
       '/api/': { base: '/api/', items: sidebarAPI() },
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/RusherDevelopment' }
+      { icon: {
+        svg: "Site" //replace with an icon
+        }, link: 'https://rusherhack.org/'
+      },
+      { icon: 'github', link: 'https://github.com/RusherDevelopment' },
+      { icon: 'youtube', link: 'https://www.youtube.com/@RusherDevelopment' }
     ],
     footer: {
-      message: 'RusherHack and Rusher Development LLC are not affiliated with Mojang AB.',
-      copyright: '© 2024 Rusher Development LLC - All Rights Reserved'
+      copyright: '© 2024 Rusher Development LLC - All Rights Reserved',
+      message: 'RusherHack and Rusher Development LLC are not affiliated with Mojang AB.'
     }
   }
 })
@@ -33,12 +41,12 @@ export default defineConfig({
 function sidebarBase(): DefaultTheme.SidebarItem[] {
   return [
     {
-        text: 'Basics',
-        link: 'basics'
+        text: 'Guide',
+        link: 'guide'
     },
     {
-        text: 'Client',
-        link: 'client'
+        text: 'Features',
+        link: 'features'
     },
     {
         text: 'API',
@@ -47,15 +55,66 @@ function sidebarBase(): DefaultTheme.SidebarItem[] {
   ]
 }
 
-function sidebarBasics(): DefaultTheme.SidebarItem[] {
+function sidebarGuide(): DefaultTheme.SidebarItem[] {
     return [
-
+      {
+        text: 'Introduction',
+        collapsed: false,
+        items: [
+          { text: 'Account', link: 'introduction/account' },
+          { text: 'Installation', link: 'introduction/installation' }
+        ]
+      },
+      {
+        text: 'Getting Help', link: 'help/', //will have info about help related things; opening help ticket, emailing, etc
+        collapsed: false,
+        items: [
+          { text: 'HWID', link: 'help/hwid' }
+        ]
+      }
     ]
 }
 
-function sidebarClient(): DefaultTheme.SidebarItem[] {
+function sidebarFeatures(): DefaultTheme.SidebarItem[] {
     return [
-
+      {
+        text: 'Modules', link: 'modules/',
+        collapsed: false,
+        items: [
+          {
+            text: 'Client',
+            collapsed: false,
+            items: [
+              { text: 'ClickGUI', link: 'modules/client/clickgui' } //just an example, in future this should be automatically generated
+            ]
+          },
+          {
+            text: 'Movement',
+            collapsed: true,
+            items: [
+              { text: 'Velocity', link: 'modules/movement/velocity' } //just an example, in future this should be automatically generated
+            ]
+          }
+        ]
+      },
+      {
+        text: 'HUD Elements', link: 'hud/',
+        collapsed: true,
+        items: [
+        ]
+      },
+      {
+        text: 'Commands', link: 'commands/',
+        collapsed: true,
+        items: [
+        ]
+      },
+      {
+        text: 'Windows', link: 'windows/',
+        collapsed: true,
+        items: [
+        ]
+      }
     ]
 }
 
@@ -72,7 +131,7 @@ function sidebarAPI(): DefaultTheme.SidebarItem[] {
       text: 'Client',
       collapsed: true,
       items: [
-        { text: 'Globals', link: 'client/globals' }
+        { text: 'Globals', link: 'features/globals' }
       ]
     },
     {

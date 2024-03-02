@@ -3,54 +3,16 @@
 layout: home
 
 hero:
-  name: "Rusherhack Docs"
-  tagline: Indepth docs for rusherhacks plugins
+  name: "RusherHack"
+  tagline: Documentation for all things related to RusherHack. # *insert something here about anyone being able to learn about rusherhack's features and the plugin api*
   image:
-    src: assets/rusherhack-logo-head.png
+    src: ./assets/rh-head_256x256.png
     alt: logo
   actions:
     - theme: brand
-      text: Purchase Rusherhack
+      text: Get started
+      link: guide/
+    - theme: alt
+      text: Purchase
       link: https://rusherhack.org/
 ---
-
-<script setup>
-import {
-  VPTeamPage,
-  VPTeamPageTitle,
-  VPTeamMembers
-} from 'vitepress/theme';
-
-const members = [
-  {
-    avatar: 'https://www.github.com/John200410.png',
-    name: 'John200410',
-    title: 'Creator & Owner',
-    links: [
-      { icon: 'github', link: 'https://github.com/John200410' }
-    ]
-  },
-{
-    avatar: 'https://www.github.com/thnkscj.png',
-    name: 'Thnks_CJ',
-    title: 'Contributor',
-    links: [
-      { icon: 'github', link: 'https://github.com/thnkscj' }
-    ]
-  }
-]
-</script>
-
-<VPTeamPage>
-  <VPTeamPageTitle>
-    <template #title>
-      Our Contributors
-    </template>
-    <template #lead>
-      These docs are brought to you by the following list of amazing contributors.
-    </template>
-  </VPTeamPageTitle>
-  <VPTeamMembers
-    :members="members"
-  />
-</VPTeamPage>
