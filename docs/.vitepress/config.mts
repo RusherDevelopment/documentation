@@ -2,7 +2,7 @@ import {DefaultTheme, defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: "RusherHack Documentation",
-  base: "",
+  base: "/documentation",
   head: [
     ['link', { rel: 'icon', href: './assets/rh-head_256x256.png' }]
   ],
