@@ -4,7 +4,7 @@ Different methods of getting help:
 - Discord
   - To get access to the RusherHack Discord server, you must link your account in the [installer](../introduction/installation)
   - #support-and-hwid channel
-- Email rusherbot2b2t@gmail.com
+- Email  support@rusherhack.org
   - Direct contact with the developer
   - Usually responds in under 24 hours
 - Support Ticket
