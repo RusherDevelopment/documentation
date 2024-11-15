@@ -118,7 +118,7 @@ public interface IRusherHack {
   logger.error("This is an error!");
   logger.debug("This is a debug message!");
   ```
-- **See:** [org.rusherhack.core.logging.Logger]() & [org.rusherhack.core.logging.ILogger]()
+- **See:** [org.rusherhack.core.logging.Logger](irusherhack.md) & [org.rusherhack.core.logging.ILogger](irusherhack.md)
 
 ### `getVersion`
 
