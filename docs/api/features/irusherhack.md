@@ -36,72 +36,72 @@ public interface IRusherHack {
 
 #### `getEventBus`
 
-- **Type:** [`IEventBus`]()
+- **Type:** [`IEventBus`](irusherhack.md)
 - **Description:** Returns the event bus instance
 
 ### `getModuleManager`
 
-- **Type:** [`IFeatureManager<IModule>`]()
+- **Type:** [`IFeatureManager<IModule>`](irusherhack.md)
 - **Description:** Returns the module manager instance
 
 ### `getCommandManager`
 
-- **Type:** [`ICommandManager`]()
+- **Type:** [`ICommandManager`](irusherhack.md)
 - **Description:** Returns the command manager instance
 
 ### `getHudManager`
 
-- **Type:** [`IHudManager`]()
+- **Type:** [`IHudManager`](irusherhack.md)
 - **Description:** Returns the HUD manager instance
 
 ### `getWindowManager`
 
-- **Type:** [`IWindowManager`]()
+- **Type:** [`IWindowManager`](irusherhack.md)
 - **Description:** Returns the window manager instance
 
 ### `getThemeManager`
 
-- **Type:** [`IThemeManager`]()
+- **Type:** [`IThemeManager`](irusherhack.md)
 - **Description:** Returns the theme manager instance
 
 ### `getBindManager`
 
-- **Type:** [`IBindManager`]()
+- **Type:** [`IBindManager`](irusherhack.md)
 - **Description:** Returns the bind manager instance
 
 ### `getRelationManager`
 
-- **Type:** [`IRelationManager`]()
+- **Type:** [`IRelationManager`](irusherhack.md)
 - **Description:** Returns the relation manager instance
 
 ### `getRotationManager`
 
-- **Type:** [`IRotationManager`]()
+- **Type:** [`IRotationManager`](irusherhack.md)
 - **Description:** Returns the rotation manager instance
 
 ### `getNotificationManager`
 
-- **Type:** [`INotificationManager`]()
+- **Type:** [`INotificationManager`](irusherhack.md)
 - **Description:** Returns the notification manager instance
 
 ### `getChunkProcessor`
 
-- **Type:** [`IChunkProcessor`]()
+- **Type:** [`IChunkProcessor`](irusherhack.md)
 - **Description:** Returns the chunk processor instance
 
 ### `getServerState`
 
-- **Type:** [`IServerState`]()
+- **Type:** [`IServerState`](irusherhack.md)
 - **Description:** Returns the server state instance
 
 ### `interactions`
 
-- **Type:** [`IInteractions`]()
+- **Type:** [`IInteractions`](irusherhack.md)
 - **Description:** Returns the interactions instance
 
 ### `createLogger`
 
-- **Type:** [`ILogger`]()
+- **Type:** [`ILogger`](irusherhack.md)
 - **Description:** Creates a new logger with the specified name
 - **Parameters:**
 
@@ -132,29 +132,29 @@ public interface IRusherHack {
 
 ### `getRenderer2D`
 
-- **Type:** [`IRenderer2D`]()
+- **Type:** [`IRenderer2D`](irusherhack.md)
 - **Description:** Returns the 2D renderer instance
 
 ### `getRenderer3D`
 
-- **Type:** [`IRenderer3D`]()
+- **Type:** [`IRenderer3D`](irusherhack.md)
 - **Description:** Returns the 3D renderer instance
 
 ### `fonts`
 
-- **Type:** [`Fonts`]()
+- **Type:** [`Fonts`](irusherhack.md)
 - **Description:** Contains methods for accessing general font renderer instances
 - **See:** [Fonts](#fonts)
 
 ### `colors`
 
-- **Type:** [`Colors`]()
+- **Type:** [`Colors`](irusherhack.md)
 - **Description:** Allows access to the user's color preferences, as well as entities most prominent color
 - **See:** [Colors](#colors)
 
 ### `entities`
 
-- **Type:** [`Entities`]()
+- **Type:** [`Entities`](irusherhack.md)
 - **Description:** Contains methods for determining the type of an entity
 - **See:** [Entities](#entities)
 
