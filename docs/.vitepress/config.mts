@@ -66,9 +66,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         ]
       },
       {
-        text: 'Getting Help', link: 'help/', //will have info about help related things; opening help ticket, emailing, etc
+        text: 'Help', //will have info about help related things; opening help ticket, emailing, etc
         collapsed: false,
         items: [
+          { text: 'Getting Help', link: 'help/' },
           { text: 'HWID', link: 'help/hwid' }
         ]
       }
@@ -85,7 +86,7 @@ function sidebarFeatures(): DefaultTheme.SidebarItem[] {
             text: 'Client',
             collapsed: false,
             items: [
-              { text: 'ClickGUI', link: 'modules/client/clickgui' } //just an example, in future this should be automatically generated
+              { text: 'ClickGUI', link: 'modules/features/clickgui' } //just an example, in future this should be automatically generated
             ]
           },
           {
@@ -124,14 +125,22 @@ function sidebarAPI(): DefaultTheme.SidebarItem[] {
       text: 'Information',
       collapsed: false,
       items: [
-        { text: 'Getting Started', link: 'guide/getting-started' }
+        { text: 'Getting Started', link: 'index' }
       ]
     },
     {
-      text: 'Client',
+      text: 'org.rusherhack.client.api',
       collapsed: true,
       items: [
-        { text: 'Globals', link: 'features/globals' }
+        { text: 'Globals', link: 'features/globals' },
+        { text: 'IRusherHack', link: 'features/irusherhack' },
+        {
+          text: 'utils',
+          collapsed: true,
+          items: [
+            { text: 'BufferUtils', link: 'features/bufferutils' },
+          ]
+        }
       ]
     },
     {

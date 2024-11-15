@@ -13,8 +13,8 @@ called `plugins` in the `.minecraft/rusherhack` folder, and drop plugin .jar fil
 
 - [Java](https://nodejs.org/) version 17 or higher.
 - An ide or text editor. Below are some recommended ones:
-  - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
-  - [VSCode](https://code.visualstudio.com/)
+    - [IntelliJ IDEA](https://www.jetbrains.com/idea/)
+    - [VSCode](https://code.visualstudio.com/)
 
 ::: code-group
 
