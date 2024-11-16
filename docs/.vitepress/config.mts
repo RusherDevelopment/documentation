@@ -4,11 +4,11 @@ export default defineConfig({
   title: "RusherHack Documentation",
   base: "/documentation",
   head: [
-    ['link', { rel: 'icon', href: './assets/rh-head_256x256.png' }]
+    ['link', { rel: 'icon', href: 'rh-head_256x256.png' }]
   ],
   description: "Documentation for all things related to RusherHack.",
   themeConfig: {
-    logo: 'assets/rh-head_256x256.png',
+    logo: 'rh-head_256x256.png',
     search: {
       provider: 'local'
     },
